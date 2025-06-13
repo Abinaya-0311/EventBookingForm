@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Form</title>
+    <link rel="stylesheet" href="event-update-style.css"> </head>
+<body>
+
+    <div class="page-container">
+        <header class="event-header">
+            <h1>Event 1</h1>
+            <p class="available-seats">Number of available seats: <span>23</span></p>
+        </header>
+
+        <div class="booking-form-wrapper">
+            <div class="event-image-section">
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/200x150?text=Event+Image" alt="Event Image">
+                </div>
+            </div>
+
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone No.:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 1234567890" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="numSeats">Number of seats:</label>
+                    <input type="number" id="numSeats" name="numSeats" min="1" max="23" value="1">
+                    </div>
+
+                <div class="form-group attendee-field" id="attendee2-group">
+                    <label for="attendee2Name">Name of Attendee 2:</label>
+                    <input type="text" id="attendee2Name" name="attendee2Name">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
